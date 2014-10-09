@@ -41,3 +41,31 @@ Connecting to database specified by database.yml
   [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Thu, 09 Oct 2014 13:48:22 UTC +00:00], ["description", nil], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Thu, 09 Oct 2014 13:48:22 UTC +00:00]]
   [1m[36m (15.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-10-09 11:02:02 -0300
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (45.8ms)
+Compiled application.css  (0ms)  (pid 2351)
+Compiled jquery.js  (38ms)  (pid 2351)
+Compiled jquery_ujs.js  (0ms)  (pid 2351)
+Compiled application.js  (111ms)  (pid 2351)
+Completed 200 OK in 605.1ms (Views: 460.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-09 11:02:04 -0300
+Served asset /application.css - 200 OK (31ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-09 11:02:04 -0300
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-09 11:02:04 -0300
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-09 11:02:04 -0300
+Served asset /application.js - 200 OK (13ms)
